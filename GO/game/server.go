@@ -7,7 +7,7 @@ import (
 )
 
 func StartServer() {
-	listener, err := net.Listen("tcp", "localhost:8080")
+	listener, err := net.Listen("tcp", "0.0.0.0:8080")
 	if err != nil {
 		log.Fatalf("Error starting server: %v", err)
 	}
