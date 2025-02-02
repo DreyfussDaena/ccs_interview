@@ -44,7 +44,7 @@ func StartServer() {
 		} else {
 			// Check if the guess matches the correct answer
 			var response, prefix string
-			if ValidateGuessCorrectness(numGuess) {
+			if CheckGuessCorrectness(numGuess) {
 				// prefix = GeneratePrefix()
 				response = "Congratulations! You guessed the correct number!"
 			} else {
