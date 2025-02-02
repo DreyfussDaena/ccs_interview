@@ -12,7 +12,7 @@ func ValidateGuess(input string) (int, error) {
 	return guess, err
 }
 
-func ValidateGuessCorrectness(guess int) bool {
+func CheckGuessCorrectness(guess int) bool {
 	return guess == 42
 }
 
