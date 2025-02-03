@@ -8,6 +8,9 @@
 *.so
 *.dylib
 
+# output files
+JAVA/target
+
 # Test binary, built with `go test -c`
 *.test
 

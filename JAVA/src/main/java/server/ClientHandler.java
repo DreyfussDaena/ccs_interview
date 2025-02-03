@@ -1,6 +1,6 @@
 package server;
 
-import game.GameLogic;
+import server.GameLogic;
 import java.io.*;
 import java.net.*;
 
@@ -24,7 +24,7 @@ class ClientHandler extends Thread {
                 try {
                     int guess = gameLogic.validateGuess(inputLine);
                     boolean isCorrect = gameLogic.checkGuessCorrectness(guess);
-                    prefix = ""
+                    String prefix = "";
 //                     String prefix = gameLogic.generatePrefix(guess);
 
                     if (isCorrect) {
